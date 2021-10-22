@@ -67,9 +67,14 @@
 											T&eacute;l 
 										</td>
 										<td id="plus-info">
+											<span id="age"></span> ans <br>
 											<script>
-												age = int(document.write(new Date().getFullYear()))-1998;
-											</script> ans <br>
+												window.addEventListener('load',function(e){
+													showage = document.getElementById('age');
+													age = int(document.write(new Date().getFullYear()))-1998;
+													showage.innerHTML = age;
+												}
+											</script>
 											Antananarivo <br>
 											Madagascar <br>
 											Malagasy <br>
